@@ -7,12 +7,10 @@
 
 (add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
 
-(setq user-full-name    "Henrik Lissner"
-      user-mail-address "henrik@lissner.net"
+(setq user-full-name    "Alex Fridlyand"
+      user-mail-address "alex@fridlyand.com"
 
-      ;; doom-variable-pitch-font (font-spec :family "Fira Sans")
-      ;; doom-unicode-font (font-spec :family "Input Mono Narrow" :size 12)
-      doom-big-font (font-spec :family "Fira Mono" :size 19)
+      doom-big-font (font-spec :family "Input Mono Narrow" :size 18)
 
       show-trailing-whitespace t
       ;; mu4e
@@ -44,16 +42,13 @@
 ;;
 
 (pcase (system-name)
-  ("halimede"
-   (setq ivy-height 12
-         ivy-posframe-font (font-spec :family "Input Mono Narrow" :size 12)
-         doom-font (font-spec :family "Input Mono Narrow" :size 9)
+  ("fractal.lan"
+   (setq ivy-height 14
+         ivy-posframe-font (font-spec :family "Input Mono Narrow" :size 14)
+         doom-font (font-spec :family "Input Mono Narrow" :size 14)
          ;; I've swapped these keys on my keyboard
          x-super-keysym 'meta
-         x-meta-keysym  'super))
-  (_
-   (setq ivy-posframe-font (font-spec :family "Input Mono Narrow" :size 18)
-         doom-font (font-spec :family "Input Mono Narrow" :size 12 :weight 'semi-light))))
+         x-meta-keysym  'super)))
 
 (when IS-MAC
   (setq ns-use-thin-smoothing t)
